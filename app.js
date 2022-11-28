@@ -13,7 +13,6 @@ app.engine('ntl', (filePath, options, callback) => { // define the template engi
     return callback(null, rendered)
   })
 })
-app.set('views', './views') // specify the views directory
 app.set('view engine', 'ntl') // register the template engine
 app.get('/', (req, res) => {
   res.render('index', { title: 'Hey', message: 'Hello there!' })
